@@ -38,6 +38,8 @@ The following features were implemented:
 
 The `sh /scene/{timecode} ` endpoint is returning a relative path for the image property in the response from the API. Therefore, a background image cannot be set as intended in the Scene component.
 
+Also, an index is used as a key in the map function to identify each crew member as the API returns the same id for them all.
+
 When the video ends, the page needs to be reloaded in order to play the video again.
 
-The next step could be the implementation of a proper state management system
+The next steps could be the implementation of a proper state management system, a responsive design as well as a better semantic for the Mui components

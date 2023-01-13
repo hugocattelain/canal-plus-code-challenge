@@ -75,12 +75,12 @@ function FullscreenButton({ player, videoElement }) {
     return () => {
       removeFullscreenListener(fullscreenListener);
     };
-  }, [player.videoElement]);
+  }, [videoElement]);
 
   const setFullscreen = useCallback(() => {
     requestFullscreen(videoElement);
     videoElement.classList.add('fullscreen');
-  }, [isCurrentlyFullScreen, player.videoElement]);
+  }, [videoElement]);
 
   return (
     <IconButton

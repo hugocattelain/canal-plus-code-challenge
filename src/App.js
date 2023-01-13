@@ -1,14 +1,14 @@
 import './App.css';
 import { ThemeProvider } from '@mui/material';
 
-import Player from './controllers/Player';
+import Main from './components/Main';
 import { theme } from './theme';
 
 function App() {
   return (
     <div className='App'>
       <ThemeProvider theme={theme}>
-        <Player />
+        <Main />
       </ThemeProvider>
     </div>
   );

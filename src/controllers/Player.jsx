@@ -3,8 +3,8 @@ import { Subject } from 'rxjs';
 import { createModule } from '../utils/createModule';
 import PlayerModule from '../modules/player';
 import ControlBar from './ControlBar';
-import SceneSelector from '../components/SceneSelector';
-import CrewList from '../components/CrewList';
+import SceneList from './SceneList';
+import CrewMembersList from '../components/CrewMembersList';
 import { Box } from '@mui/material';
 
 const Player = () => {
@@ -45,12 +45,12 @@ const Player = () => {
 
   return (
     <>
-      <Box sx={{ width: '500px', margin: '0 auto' }}>
+      <Box sx={{ width: '80%', margin: '0 auto' }}>
         <video ref={videoElementRef} id='video' style={{ width: '100%' }} />
         <ControlBar player={player} videoElement={videoElementRef.current} />
       </Box>
-      <SceneSelector player={player} />
-      <CrewList />
+      <SceneList player={player} />
+      <CrewMembersList />
     </>
   );
 };

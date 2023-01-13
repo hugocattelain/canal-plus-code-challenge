@@ -16,11 +16,13 @@ function TimeIndicator({ currentPosition, duration }) {
 
   return (
     <>
-      {currentPosition && (
+      {currentPosition > 0 ? (
         <Typography sx={{ mr: '16px' }} color='primary'>
           {formatNumber(Math.round(currentPosition))}/
           {formatNumber(Math.round(duration))}
         </Typography>
+      ) : (
+        <></>
       )}
     </>
   );

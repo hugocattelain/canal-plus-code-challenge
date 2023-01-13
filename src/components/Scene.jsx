@@ -15,7 +15,14 @@ function Scene({ jump, scene }) {
   return (
     <Typography
       onClick={() => jump(scene.beginTimecode)}
-      sx={{ cursor: 'pointer' }}
+      sx={{
+        cursor: 'pointer',
+        padding: '8px',
+        margin: '6px',
+        border: '1px solid white',
+        borderRadius: '4px',
+      }}
+      color='primary'
     >
       {sceneDetail.title}
     </Typography>

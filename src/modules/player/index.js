@@ -94,22 +94,6 @@ const PLAYER = ({ $destroy, state }, initOpts) => {
     JUMP: (position) => {
       player.seekTo(position.value);
     },
-
-    MUTE: () => {
-      player.mute();
-    },
-
-    UNMUTE: () => {
-      player.unMute();
-    },
-
-    SET_AUDIO_TRACK: (track) => {
-      player.setAudioTrack(track.id);
-    },
-
-    SET_VIDEO_TRACK: (track) => {
-      player.setVideoTrack(track.id);
-    },
   };
 };
 
